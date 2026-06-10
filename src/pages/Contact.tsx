@@ -60,7 +60,7 @@ const Contact = () => {
     const body = encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\n${message}`
     );
-    window.location.href = `mailto:info@kaspx.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    window.location.href = `mailto:kaspxtech@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
     setSubmitted(true);
     form.reset();
   };

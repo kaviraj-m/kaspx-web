@@ -22,11 +22,11 @@ const projects = [
   },
   {
     id: '03',
-    title: 'Go Framwork',
+    title: 'KVolt Framework',
     image: p3,
     bgColor: 'bg-[#f3cafc]',
     description:
-      'We envision a world where events are more than just gatherings—they are experiences. (Placeholder content to be updated)',
+      'Engineered KVolt, our open-source Go web framework built for production-grade speed and simplicity — zero-allocation routing, async logging, built-in middleware, and automatic request validation. A dedicated CLI helps teams scaffold and ship APIs in minutes.',
   },
 ];
 
