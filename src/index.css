@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Ultimate Serial Heavy';
+  src: url('/Ultimate-Serial-Heavy Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FFFFFF;
+  color: #111827;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'Ultimate Serial Heavy', sans-serif;
+}
+
+.primary-gradient-text {
+  background: linear-gradient(to right, #2ccbb5, #2bcbb6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.primary-gradient-bg {
+  background: linear-gradient(to right, #2ccbb5, #2bcbb6);
+}
+
+.card-dark {
+  background-color: #1F2937;
+  color: #FFFFFF;
+}
