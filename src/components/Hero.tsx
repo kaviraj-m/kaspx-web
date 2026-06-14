@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { NavHashLink } from 'react-router-hash-link';
 import Button from './common/Button';
-import { heroServiceHighlights, heroTagline } from '../data/services';
+import { heroTagline } from '../data/services';
 
 const HeroImage = ({ className = '' }: { className?: string }) => (
   <div className={`relative w-full max-w-xs sm:max-w-sm mx-auto ${className}`}>
@@ -76,7 +76,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="flex flex-col sm:flex-row flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6 mb-10"
+            className="flex flex-col sm:flex-row flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6"
           >
             <Button to="/contact">Start a Project</Button>
 
@@ -91,50 +91,10 @@ const Hero = () => {
               How We Work
             </NavHashLink>
           </motion.div>
-
-          <motion.ul
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.45 }}
-            className="flex flex-wrap justify-center lg:justify-start gap-2 text-xs text-gray-500"
-          >
-            {heroServiceHighlights.map((s) => (
-              <li
-                key={s.title}
-                className="px-3 py-1 rounded-full bg-gray-50 border border-gray-100"
-              >
-                {s.title}
-              </li>
-            ))}
-          </motion.ul>
         </div>
 
-        {/* Right: cards + image — desktop only */}
-        <div className="hidden lg:flex lg:col-span-7 relative flex-row items-center justify-end gap-6">
-          <div className="flex flex-col gap-4 z-20 shrink-0">
-            {heroServiceHighlights.map((service, index) => {
-              const Icon = service.icon;
-              return (
-                <NavHashLink smooth to="/#services" key={service.title}>
-                  <motion.div
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.3 + index * 0.1 }}
-                    whileHover={{ scale: 1.05 }}
-                    className="card-dark p-6 rounded-3xl w-48 shadow-2xl flex flex-col justify-between h-40 cursor-pointer"
-                  >
-                    <span className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center mb-4 text-accent">
-                      <Icon className="w-5 h-5" />
-                    </span>
-                    <h3 className="text-xs font-bold leading-tight uppercase tracking-wider">
-                      {service.title}
-                    </h3>
-                  </motion.div>
-                </NavHashLink>
-              );
-            })}
-          </div>
-
+        {/* Right: image — desktop only */}
+        <div className="hidden lg:flex lg:col-span-7 relative items-center justify-end">
           <HeroImage className="max-w-md" />
 
           <div

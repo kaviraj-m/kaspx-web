@@ -61,10 +61,10 @@ export const services: Service[] = [
     icon: Sparkles,
   },
   {
-    title: 'IT & Server Support',
+    title: 'Server Support and Server Maintenance',
     image:
       'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop',
-    desc: 'Reliable infrastructure management and 24/7 technical support.',
+    desc: 'Expert server support for setup, monitoring, and troubleshooting when you need it. Proactive server maintenance with updates, backups, and performance tuning to keep your infrastructure secure and running smoothly.',
     icon: Server,
   },
   {
@@ -76,7 +76,5 @@ export const services: Service[] = [
   },
 ];
 
-export const heroServiceHighlights = services.slice(0, 3);
-
 export const heroTagline =
-  'From business websites and e-commerce to mobile apps, AI integration, and blockchain — we deliver end-to-end digital solutions built for growth.';
+  'From business websites and e-commerce to mobile apps, AI integration, server support and maintenance, and blockchain — we deliver end-to-end digital solutions built for growth.';

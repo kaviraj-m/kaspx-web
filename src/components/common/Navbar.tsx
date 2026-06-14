@@ -114,10 +114,10 @@ const Navbar = () => {
             </a>
             <span className="hidden lg:inline text-gray-300 mx-0.5">|</span>
             <a
-              href="tel:+918122388269"
+              href="tel:+916381310273"
               className="hidden lg:inline text-gray-900 font-bold text-[13px] font-sans hover:text-[#2ccbb5] transition-colors no-underline whitespace-nowrap"
             >
-              +91 81223 88269
+              +91 63813 10273
             </a>
           </div>
         </div>

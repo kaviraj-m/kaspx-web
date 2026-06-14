@@ -133,8 +133,8 @@ const Services = () => (
           Innovative Services
         </h2>
         <p className="text-gray-500 max-w-2xl mx-auto mt-4 text-sm sm:text-base px-4">
-          Websites, apps, AI, cloud support, and blockchain — everything your business needs to grow
-          online.
+          Websites, apps, AI, server support and maintenance, and blockchain — everything your business
+          needs to grow online.
         </p>
       </motion.div>
 

@@ -45,7 +45,16 @@ const Projects = () => {
           </motion.h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-5 xl:gap-8 md:items-stretch">
+        <div
+          className={[
+            'flex lg:grid overflow-x-auto lg:overflow-visible',
+            'snap-x snap-mandatory lg:snap-none',
+            'gap-5 xl:gap-8 lg:items-stretch',
+            'lg:grid-cols-2 xl:grid-cols-3',
+            'pb-2 lg:pb-0 -mx-1 px-1',
+            '[scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden',
+          ].join(' ')}
+        >
           {projects.map((item, index) => (
             <motion.article
               key={item.id}
@@ -56,8 +65,10 @@ const Projects = () => {
               className={[
                 item.bgColor,
                 'rounded-2xl sm:rounded-3xl p-5 sm:p-6 flex flex-col items-center text-center',
-                'transition-transform hover:-translate-y-1 duration-300 w-full h-full',
-                'max-w-lg mx-auto md:max-w-none md:mx-0',
+                'transition-transform hover:-translate-y-1 duration-300 h-full',
+                'flex-shrink-0 snap-center',
+                'w-[min(85vw,360px)] sm:w-[min(75vw,380px)] md:w-[min(55vw,400px)]',
+                'lg:w-full lg:flex-shrink lg:snap-align-none lg:min-w-0',
                 'md:p-5 md:rounded-2xl',
                 'xl:p-6 xl:rounded-3xl',
               ].join(' ')}

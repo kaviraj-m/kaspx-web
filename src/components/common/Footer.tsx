@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Youtube, Linkedin, Slack, Twitter, Instagram, Mail, Phone, ArrowUpRight } from 'lucide-react';
+import { Mail, Phone, Globe, ArrowUpRight } from 'lucide-react';
 import { NavHashLink as Link } from 'react-router-hash-link';
 
 const Footer = () => {
@@ -46,39 +46,33 @@ const Footer = () => {
 
 
 
-          {/* Column 4: Contact & Socials */}
-          <div className="pb-12 lg:pb-24 lg:pl-12 space-y-10">
-            <div className="space-y-6">
-              <h4 className="text-gray-400 uppercase tracking-[0.2em] text-[10px] font-bold">
-                Let's Talk
-              </h4>
-              <div className="space-y-3">
-                <a href="tel:+917904612266" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors text-sm">
-                  <Phone size={16} className="text-[#2ccbb5]" />
-                  +91 7904612266
-                </a>
-                <a href="tel:+918122388269" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors text-sm">
-                  <Phone size={16} className="text-[#2ccbb5]" />
-                  +91 81223 88269
-                </a>
-                <Link to="/contact" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors text-sm">
-                  <Mail size={16} className="text-[#2ccbb5]" />
-                  kaspxtech@gmail.com
-                </Link>
-              </div>
-            </div>
-
-            <div className="flex gap-2">
-              {[Twitter, Youtube, Linkedin, Slack, Instagram].map((Icon, i) => (
-                <motion.a
-                  key={i}
-                  href="#"
-                  whileHover={{ y: -3, backgroundColor: 'rgba(255,255,255,0.1)' }}
-                  className="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center text-gray-400 hover:text-[#2ccbb5] transition-colors"
-                >
-                  <Icon size={18} />
-                </motion.a>
-              ))}
+          {/* Column 3: Contact */}
+          <div className="pb-12 lg:pb-24 lg:pl-12 space-y-6">
+            <h4 className="text-gray-400 uppercase tracking-[0.2em] text-[10px] font-bold">
+              Let's Talk
+            </h4>
+            <div className="space-y-3">
+              <a href="tel:+917904612266" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors text-sm">
+                <Phone size={16} className="text-[#2ccbb5]" />
+                +91 7904612266
+              </a>
+              <a href="tel:+916381310273" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors text-sm">
+                <Phone size={16} className="text-[#2ccbb5]" />
+                +91 63813 10273
+              </a>
+              <Link to="/contact" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors text-sm">
+                <Mail size={16} className="text-[#2ccbb5]" />
+                kaspxtech@gmail.com
+              </Link>
+              <a
+                href="https://kaspx.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors text-sm"
+              >
+                <Globe size={16} className="text-[#2ccbb5]" />
+                kaspx.com
+              </a>
             </div>
           </div>
         </div>
