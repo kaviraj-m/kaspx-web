@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { NavHashLink as HashLink } from 'react-router-hash-link';
-import { Phone } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
-const PRIMARY_PHONE = '+91 7904612266';
-const PRIMARY_PHONE_HREF = 'tel:+917904612266';
+const COMPANY_EMAIL = 'kaspxtech@gmail.com';
+const COMPANY_EMAIL_HREF = 'mailto:kaspxtech@gmail.com';
 
 const navLinks = [
   { label: 'Home', to: '/#home' },
@@ -101,23 +101,16 @@ const Navbar = () => {
             </span>
           </div>
 
-          <div className="flex items-center gap-1.5 shrink-0">
-            <Phone className="size-3.5 sm:size-4 text-[#d946ef] fill-[#d946ef] shrink-0" aria-hidden />
-            <span className="hidden sm:inline text-gray-800 font-bold text-[11px] sm:text-[13px] font-sans whitespace-nowrap">
-              Call Us :
+          <div className="flex items-center gap-1.5 shrink-0 min-w-0">
+            <Mail className="size-3.5 sm:size-4 text-[#d946ef] shrink-0" aria-hidden />
+            <span className="text-gray-800 font-bold text-[10px] sm:text-[13px] font-sans whitespace-nowrap">
+              Connect Us :
             </span>
             <a
-              href={PRIMARY_PHONE_HREF}
-              className="text-gray-900 font-bold text-[10px] sm:text-[13px] font-sans hover:text-[#2ccbb5] transition-colors no-underline whitespace-nowrap"
+              href={COMPANY_EMAIL_HREF}
+              className="text-gray-900 font-bold text-[10px] sm:text-[13px] font-sans hover:text-[#2ccbb5] transition-colors no-underline truncate max-w-[9rem] sm:max-w-none"
             >
-              {PRIMARY_PHONE}
-            </a>
-            <span className="hidden lg:inline text-gray-300 mx-0.5">|</span>
-            <a
-              href="tel:+916381310273"
-              className="hidden lg:inline text-gray-900 font-bold text-[13px] font-sans hover:text-[#2ccbb5] transition-colors no-underline whitespace-nowrap"
-            >
-              +91 63813 10273
+              {COMPANY_EMAIL}
             </a>
           </div>
         </div>

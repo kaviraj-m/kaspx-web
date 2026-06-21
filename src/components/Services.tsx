@@ -55,14 +55,9 @@ const BackgroundDecorations = () => (
   </aside>
 );
 
-const splitDescLines = (text: string) =>
-  text.split(/(?<=[.!?])\s+/).filter((line) => line.trim().length > 0);
 
-const ServiceCard = ({ title, image, desc, icon: Icon }: Service) => {
-  const descLines = splitDescLines(desc);
-
-  return (
-    <motion.article variants={cardRevealVariants} className="group flex flex-col w-full">
+const ServiceCard = ({ title, image, desc, icon: Icon }: Service) => (
+  <motion.article variants={cardRevealVariants} className="group flex flex-col w-full">
       <motion.div
         variants={contentLineVariants}
         className="relative h-48 sm:h-52 md:h-56 overflow-hidden rounded-t-md"
@@ -96,21 +91,15 @@ const ServiceCard = ({ title, image, desc, icon: Icon }: Service) => {
           {title}
         </motion.h3>
 
-        <motion.div className="space-y-1.5 sm:space-y-2 flex-1">
-          {descLines.map((line, i) => (
-            <motion.p
-              key={`${title}-line-${i}`}
-              variants={contentLineVariants}
-              className="text-gray-400 text-xs sm:text-sm leading-relaxed"
-            >
-              {line}
-            </motion.p>
-          ))}
-        </motion.div>
+        <motion.p
+          variants={contentLineVariants}
+          className="text-gray-400 text-xs sm:text-sm leading-relaxed min-h-[3.25rem] sm:min-h-[3.5rem]"
+        >
+          {desc}
+        </motion.p>
       </motion.div>
     </motion.article>
   );
-};
 
 const Services = () => (
   <section id="services" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-[#f4f5f7] overflow-hidden relative">
@@ -133,7 +122,7 @@ const Services = () => (
           Innovative Services
         </h2>
         <p className="text-gray-500 max-w-2xl mx-auto mt-4 text-sm sm:text-base px-4">
-          Websites, apps, AI, server support and maintenance, and blockchain — everything your business
+          Websites, apps, AI, application hosting and maintenance, and blockchain — everything your business
           needs to grow online.
         </p>
       </motion.div>

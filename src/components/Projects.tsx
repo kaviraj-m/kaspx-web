@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import p1 from '../assets/p1.jpeg';
 import p2 from '../assets/p2.jpg';
 import p3 from '../assets/p3.png';
+import memorix from '../assets/memorix.png';
 
 const projects = [
   {
@@ -10,7 +11,7 @@ const projects = [
     image: p1,
     bgColor: 'bg-[#c4cbff]',
     description:
-      'Designed and developed a modern, responsive school website for London Look School, showcasing academic programs, admissions, facilities, and school activities through a clean, user-friendly digital experience',
+      'Designed and developed a modern, responsive school website for London Look School, showcasing academic programs, admissions, facilities, and school activities through a clean, user-friendly digital experience.',
   },
   {
     id: '02',
@@ -27,6 +28,14 @@ const projects = [
     bgColor: 'bg-[#f3cafc]',
     description:
       'Engineered KVolt, our open-source Go web framework built for production-grade speed and simplicity — zero-allocation routing, async logging, built-in middleware, and automatic request validation. A dedicated CLI helps teams scaffold and ship APIs in minutes.',
+  },
+  {
+    id: '04',
+    title: 'Memorix',
+    image: memorix,
+    bgColor: 'bg-[#fcd5b8]',
+    description:
+      'Built Memorix, a full-stack order management portal for custom frame businesses — React web app with a Go API, role-based Admin, Executive, and Designer workflows, enquiry-to-dispatch pipeline, analytics dashboards, and attendance reporting.',
   },
 ];
 
