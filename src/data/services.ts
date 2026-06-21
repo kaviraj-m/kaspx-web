@@ -40,7 +40,7 @@ export const services: Service[] = [
     icon: Smartphone,
   },
   {
-    title: 'Web App',
+    title: 'Web Apps',
     image:
       'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop',
     desc: 'Scalable, interactive web applications built with modern frameworks and maintainable architecture.',
@@ -61,18 +61,18 @@ export const services: Service[] = [
     icon: Sparkles,
   },
   {
-    title: 'Application Hosting and Maintenance',
-    image:
-      'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop',
-    desc: 'Secure application hosting, monitoring, and maintenance to keep your apps running smoothly.',
-    icon: Server,
-  },
-  {
     title: 'Web 3.0 & Blockchain',
     image:
       'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2064&auto=format&fit=crop',
     desc: 'Decentralized applications and secure blockchain solutions built for transparency and trust.',
     icon: Blocks,
+  },
+  {
+    title: 'Application Hosting and Maintenance',
+    image:
+      'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop',
+    desc: 'Secure application hosting, monitoring, and maintenance to keep your apps running smoothly.',
+    icon: Server,
   },
 ];
 
