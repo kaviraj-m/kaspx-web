@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import p1 from '../assets/p1.jpeg';
 import p2 from '../assets/p2.jpg';
-import p3 from '../assets/p3.png';
 import memorix from '../assets/memorix.png';
 
 const projects = [
@@ -23,14 +22,6 @@ const projects = [
   },
   {
     id: '03',
-    title: 'KVolt Framework',
-    image: p3,
-    bgColor: 'bg-[#f3cafc]',
-    description:
-      'Engineered KVolt, our open-source Go web framework built for production-grade speed and simplicity — zero-allocation routing, async logging, built-in middleware, and automatic request validation. A dedicated CLI helps teams scaffold and ship APIs in minutes.',
-  },
-  {
-    id: '04',
     title: 'Memorix',
     image: memorix,
     bgColor: 'bg-[#fcd5b8]',

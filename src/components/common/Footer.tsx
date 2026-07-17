@@ -32,6 +32,7 @@ const Footer = () => {
                 { name: 'Home', link: '/#home' },
                 { name: 'About Us', link: '/#about' },
                 { name: 'What We Do', link: '/#services' },
+                { name: 'KVolt', link: '/#kvolt' },
                 { name: 'Projects', link: '/#projects' },
                 { name: 'Let\'s Talk', link: '/contact' }
               ].map((item) => (

@@ -11,6 +11,7 @@ const navLinks = [
   { label: 'Home', to: '/#home' },
   { label: 'About Us', to: '/#about' },
   { label: 'What We Do', to: '/#services' },
+  { label: 'KVolt', to: '/#kvolt' },
   { label: 'Projects', to: '/#projects' },
   { label: "Let's Talk", to: '/contact', isRoute: true },
 ];
@@ -58,7 +59,7 @@ const Navbar = () => {
       setScrolled(window.scrollY > 15);
 
       if (pathname === '/') {
-        const sections = ['home', 'about', 'services', 'projects'];
+        const sections = ['home', 'about', 'services', 'kvolt', 'projects'];
         const scrollPosition = window.scrollY + 180;
 
         for (const section of sections) {
