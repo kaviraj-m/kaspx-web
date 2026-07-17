@@ -98,7 +98,7 @@ const Navbar = () => {
               🚀
             </span>
             <span className="text-gray-800 font-bold text-[10px] sm:text-[13px] tracking-wide font-sans truncate">
-              Your Technology Partner for Business Growth
+              You Dream It. We Develop It.
             </span>
           </div>
 
